@@ -70,14 +70,14 @@ zsh-autosuggestion
 
 ```
 
-Install Fuzzy finder
+# Install Fuzzy finder
 ```bash
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-Install Stacer (Monitor and config)
+# Install Stacer (Monitor and config)
 
 ```bash
 sudo apt-get install software-properties-common -y &&
@@ -89,17 +89,17 @@ sudo apt-get install stacer -y
 ```
 
 
-Compilators
+
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
 ```
 
-Helpers
+# Helpers
 ```bash
 npm install -g tldr
 ```
 
-title
+# Compilators and DB
 ```bash
 $ sudo apt install nodejs
 $ sudo apt install npm
@@ -107,5 +107,9 @@ $ sudo npm install -g n
 $ gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 $ sudo apt-get update
 $ \curl -sSL https://get.rvm.io | bash -s stable --ruby=jruby --gems=rails,puma
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+$ sudo apt-get install apache2
+$ sudo apt-get install mysql-server
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 ```
