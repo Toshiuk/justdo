@@ -27,7 +27,7 @@ first download hack font : https://github.com/ryanoasis/nerd-fonts/releases/down
 and than
 ```bash
 $ sudo apt-get update
-$ sudo apt-get install curl
+$ sudo apt-get install curl -y
 $ sudo apt install zsh -y
 $ sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev -y
 $ sudo apt-get install git -y
@@ -39,19 +39,19 @@ $ mkdir ~/.fonts && cd ~/.fonts
 $ unzip ~/Downloads/Hack.zip
 $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 $ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-
-
+$ sudo apt install snapd
+$ sudo snap install snap-store
 
 ```
 
-~/oh-my-zsh.sh  
+~/zshrc.sh  
 ```bash
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 DEFAULT_USER='toshi'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir node_version vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(longstatus history time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M:%S %d/%m/%Y}"
 POWERLEVEL9K_NODE_VERSION_BACKGROUND='022'
  
@@ -64,9 +64,12 @@ npm
 node
 dnf
 zsh-syntax-highlighting
-zsh-autosuggestion
+zsh-autosuggestions
  zsh-completions)
   autoload -U compinit && compinit
+
+alias gs="git status"
+alias zshconfig="sudo vim ~/.zshrc.
 
 ```
 
